@@ -1,3 +1,4 @@
+import { FiSearch, FiShield, FiCreditCard, FiDollarSign } from "react-icons/fi";
 export const MOCK_VEHICLES = [
   {
     id: 1,
@@ -151,71 +152,72 @@ export const MOCK_VEHICLES = [
     financePerMonth: 1215,
   },
 ];
-export const LEASE_DEALS = [
-  {
-    id: 1,
-    make: "Ford",
-    model: "Capri",
-    price: 234,
-    image:
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop",
-  },
-  {
-    id: 2,
-    make: "Peugeot",
-    model: "208",
-    price: 159,
-    image:
-      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400&h=300&fit=crop",
-  },
-  {
-    id: 3,
-    make: "Renault",
-    model: "Symbioz",
-    price: 204,
-    image:
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400&h=300&fit=crop",
-  },
-  {
-    id: 4,
-    make: "CUPRA",
-    model: "Tavascan",
-    price: 275,
-    image:
-      "https://images.unsplash.com/photo-1614162692292-7ac56d7f8c90?w=400&h=300&fit=crop",
-  },
-];
+
+// export const BRANDS = [
+//   { name: "Audi", logo: "🅰️" },
+//   { name: "BMW", logo: "🅱️" },
+//   { name: "Mercedes-Benz", logo: "🅼" },
+//   { name: "Volvo", logo: "🆅" },
+//   { name: "Ford", logo: "🅵" },
+//   { name: "Toyota", logo: "🆃" },
+//   { name: "Volkswagen", logo: "🆅" },
+//   { name: "Nissan", logo: "🅽" },
+// ];
 
 export const BRANDS = [
-  { name: "Audi", logo: "🅰️" },
-  { name: "BMW", logo: "🅱️" },
-  { name: "Mercedes-Benz", logo: "🅼" },
-  { name: "Volvo", logo: "🆅" },
-  { name: "Ford", logo: "🅵" },
-  { name: "Toyota", logo: "🆃" },
-  { name: "Volkswagen", logo: "🆅" },
-  { name: "Nissan", logo: "🅽" },
+  {
+    name: "Audi",
+    logo: "https://vl.imgix.net/img/audi-logo.png",
+  },
+  {
+    name: "BMW",
+    logo: "https://vl.imgix.net/img/bmw-logo.png",
+  },
+  {
+    name: "Mercedes-Benz",
+    logo: "https://vl.imgix.net/img/mercedes-benz-logo.png",
+  },
+  {
+    name: "Volvo",
+    logo: "https://vl.imgix.net/img/volvo-logo.png",
+  },
+  {
+    name: "Ford",
+    logo: "https://vl.imgix.net/img/ford-logo.png",
+  },
+  {
+    name: "Toyota",
+    logo: "https://vl.imgix.net/img/toyota-logo.png",
+  },
+  {
+    name: "Volkswagen",
+    logo: "https://vl.imgix.net/img/volkswagen-logo.png",
+  },
+  {
+    name: "Nissan",
+    logo: "https://vl.imgix.net/img/nissan-logo.png",
+  },
 ];
 
 export const BUYING_ESSENTIALS = [
   {
     title: "Check a car's history",
     desc: "Have complete peace of mind before you buy your next car.",
-    icon: "📋",
+    icon: <FiSearch className="w-full h-full" />,
   },
   {
     title: "Security advice",
     desc: "Advice on how to buy and sell vehicles safely.",
-    icon: "🛡️",
+    icon: <FiShield className="w-full h-full" />,
   },
   {
     title: "Car finance & loans",
     desc: "Discover how much you can borrow and find the right package for you.",
-    icon: "💳",
+    icon: <FiCreditCard className="w-full h-full" />,
   },
   {
     title: "What's it worth",
     desc: "Get a free valuation. Sell or part-exchange your car at the right price.",
-    icon: "💰",
+    icon: <FiDollarSign className="w-full h-full" />,
   },
 ];

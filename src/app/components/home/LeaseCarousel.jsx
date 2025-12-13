@@ -11,7 +11,7 @@ import {
 
 export const LeaseCarousel = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="pb-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-[1400px] mx-auto px-6">
         <h2 className="text-4xl font-semibold text-center mb-12 text-gray-900">
           Lease a brand new car
@@ -19,8 +19,8 @@ export const LeaseCarousel = () => {
 
         <div className="relative">
           <div className="overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 transition-transform duration-500 ease-out">
-              {MOCK_VEHICLES.slice(0, 4).map((vehicle) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-transform duration-500 ease-out">
+              {MOCK_VEHICLES.slice(0, 3).map((vehicle) => (
                 <VehicleCard key={vehicle.id} vehicle={vehicle} />
               ))}
             </div>

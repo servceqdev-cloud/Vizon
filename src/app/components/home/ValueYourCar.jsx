@@ -30,7 +30,7 @@ import { AiOutlineCar } from "react-icons/ai";
 
 export const ValueYourCar = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="pb-5 bg-white">
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
@@ -41,7 +41,7 @@ export const ValueYourCar = () => {
             />
           </div>
           <div>
-            <h2 className="text-5xl font-black text-gray-900 mb-6">
+            <h2 className="text-5xl font-black text-gray-800 mb-6">
               We know what your car is really worth
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">

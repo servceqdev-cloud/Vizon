@@ -57,7 +57,7 @@ export const DiscoverSection = () => {
     <>
       <section className="py-12 bg-white">
         <div className="max-w-[1400px] mx-auto px-6">
-          <h2 className="text-3xl font-semibold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl font-semibold text-center mb-12 text-gray-900">
             Discover more from Autotrader
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
