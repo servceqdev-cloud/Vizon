@@ -43,10 +43,10 @@ export const HeroSearch = ({ onSearch }) => {
       {/* --- Search Content Static --- */}
       <div className="relative z-20 max-w-[1300px] mx-auto px-6 pt-16">
         {/* Headings */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight drop-shadow-lg">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 leading-tight drop-shadow-lg">
           Your
           <span className="text-[#04A1FF] px-1">Vision.</span>
-          Our<span className="text-[#04A1FF] px-1">Mission .</span>
+          Our<span className="text-[#04A1FF] px-1">Mission.</span>
         </h1>
         <p className="text-lg md:text-xl font-semibold text-white mb-8  drop-shadow-md">
           Car finance made simple. Get your free quote in minutes.

@@ -36,7 +36,7 @@ export const Header = () => {
         <div className="flex items-center justify-between   h-16">
           <div className="flex items-center gap-2">
             <Image
-              src="/images/VF-logo.svg"
+              src="/images/VF-Logo.svg"
               alt="VF Logo"
               width={240}
               height={80}
