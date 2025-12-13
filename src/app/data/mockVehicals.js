@@ -174,7 +174,7 @@ export const BRANDS = [
     logo: "https://vl.imgix.net/img/bmw-logo.png",
   },
   {
-    name: "Mercedes-Benz",
+    name: "Mercedes",
     logo: "https://vl.imgix.net/img/mercedes-benz-logo.png",
   },
   {
