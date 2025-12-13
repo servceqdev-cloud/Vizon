@@ -200,7 +200,7 @@ export const HeroSearch = () => {
       <div className="absolute inset-0 bg-black/30"></div>
 
       {/* Search Content */}
-      <div className="relative z-20 max-w-[1300px] mx-auto px-6 py-8 md:py-16">
+      <div className="relative z-20 max-w-[1300px] mx-auto px-2 md:px-6 py-8 md:py-16">
         {/* Headings */}
         <h1 className="text-2xl md:text-5xl font-extrabold text-white mb-3 leading-tight drop-shadow-lg">
           Your
