@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Web Developer Task – Project Brief & Checklist
+Project Overview
+Develop a Next.js App Router project with four pages:
 
-## Getting Started
+1. Home
+2. Stock Vehicles
+3. Car Search
+4. Blank – a simple page with minimal content, used as a placeholder route linked from the header.
+   The application should have a consistent layout with a Header and Footer, and multiple reusable components across pages.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Pages & Components
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Pages
+   • Home Page
+   o Sections:
+    Brand Browse
+    Discover Section
+    Buying Essentials
+    Lease Car
+    Reserve Section
+    Search Bar
+    Value Your Car
+    Filter Component
+   • Stock Vehicles Page
+   o Display all vehicles with search and filter functionality
+   • Car Search Page
+   o Vehicle search page with search bar and filter logic
+   • Blank Page
+   o Minimal page showing simple design, linked from the header
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Layout
+   • Header
+   o Navigation links: Home, Stock Vehicles, Car Search, Blank
+   • Footer
+   o Common footer for all pages
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+3. Components
+   Home Page Components
+   • Brand Browse
+   • Discover Section
+   • Buying Essentials
+   • Lease Car
+   • Reserve Section
+   • Search Bar
+   • Value Your Car
+   Vehicle Components
+   • Vehicle Card – displays vehicle summary
+   • Vehicle Detail Modal – opens on clicking “Details” button in Vehicle Card
+   Filter components
+   • Vehicle Filter – handles all filter logic
+   Blank Page
+   • Simple code with minimal UI, serves as a placeholder route
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Main Functionality
+• Search and filter must be fully functional
+• Vehicle Details Modal opens when the “Details” button is clicked on any vehicle card
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Libraries
+Only one library allowed: React Icons
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Main Tasks
+• Main project uses Next.js App Router
+• All images served from the public folder (/images)
+
+---
+
+Mock Data
+• All mock data stored in the data folder
+• Examples: vehicles, brands etc.
