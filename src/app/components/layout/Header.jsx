@@ -1,31 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-  FiSearch,
-  FiHeart,
-  FiMapPin,
-  FiChevronLeft,
-  FiChevronRight,
-  FiX,
-  FiMenu,
-  FiUser,
-  FiPhone,
-  FiMail,
-  FiClock,
-} from "react-icons/fi";
-import {
-  BsFuelPump,
-  BsSpeedometer2,
-  BsFacebook,
-  BsYoutube,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
-import { GiGearStickPattern } from "react-icons/gi";
-import { AiOutlineCar } from "react-icons/ai";
-import { MdElectricCar, MdLocationOn } from "react-icons/md";
+import { FiX, FiMenu } from "react-icons/fi";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -35,53 +13,55 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between   h-16">
           <div className="flex items-center gap-2">
-            <Image
-              src="/images/VF-Logo.svg"
-              alt="VF Logo"
-              width={240}
-              height={80}
-              className="object-contain cursor-pointer"
-            />
+            <Link href="/">
+              <Image
+                src="/images/VF-Logo.svg"
+                alt="VF Logo"
+                width={240}
+                height={80}
+                className="object-contain cursor-pointer"
+              />
+            </Link>
           </div>
           <div className="flex items-center gap-8 justify-center">
             <nav className="hidden pt-2  lg:flex items-center justify-center gap-6">
-              <a
+              <Link
                 href="/"
                 className="text-gray-800  cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Car Finance
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 How it Works
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Temporay Insurance
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/stock-vehicles"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Stock Vehicles
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="#"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Contact Us
-              </a>
+              </Link>
             </nav>
           </div>
 
@@ -104,24 +84,24 @@ export const Header = () => {
 
         {mobileMenu && (
           <nav className="lg:hidden py-4 border-t">
-            <a href="/" className="block py-2 text-gray-800">
+            <Link href="/" className="block py-2 text-gray-800">
               Home
-            </a>
-            <a href="#" className="block py-2 text-gray-800">
+            </Link>
+            <Link href="#" className="block py-2 text-gray-800">
               Car Finance
-            </a>
-            <a href="#" className="block py-2 text-gray-800">
+            </Link>
+            <Link href="#" className="block py-2 text-gray-800">
               How it Works
-            </a>
-            <a href="#" className="block py-2 text-gray-800">
+            </Link>
+            <Link href="#" className="block py-2 text-gray-800">
               Car leasing
-            </a>
-            <a href="/stock-vehicles" className="block py-2 text-gray-800">
+            </Link>
+            <Link href="/stock-vehicles" className="block py-2 text-gray-800">
               Stock Vehicles
-            </a>
-            <a href="#" className="block py-2 text-gray-800">
+            </Link>
+            <Link href="#" className="block py-2 text-gray-800">
               Contact Us
-            </a>
+            </Link>
             <button className="my-2 flex items-center cursor-pointer gap-2 text-white bg-[#04A1FF] font-semibold  px-4 py-2 rounded-lg">
               Get a Free Qoute
             </button>

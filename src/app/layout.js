@@ -2,6 +2,8 @@
 import './globals.css'
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
+import { poppins } from './fonts'
+
 
 export const metadata = {
   title: "Car Marketplace",
@@ -10,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.variable}>
       <body className="bg-white">
         <Header />
         {children}

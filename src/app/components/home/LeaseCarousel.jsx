@@ -1,13 +1,8 @@
-
 import React from "react";
 import { MOCK_VEHICLES } from "@/app/data/mockVehicals";
 import { VehicleCard } from "../vehicals/VehicalCard";
-
-import {
-
-  FiChevronRight,
-  
-} from "react-icons/fi";
+import Link from "next/link";
+import { FiChevronRight } from "react-icons/fi";
 
 export const LeaseCarousel = () => {
   return (
@@ -26,13 +21,13 @@ export const LeaseCarousel = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <a
+            <Link
               href="/stock-vehicles"
               className="text-gray-800 font-semibold  pt-5 text-center hover:text-[#04A1FF]  text-lg hidden md:flex items-center gap-2"
             >
               View more Deals
               <FiChevronRight className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

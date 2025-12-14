@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 import {
   FaHeart,
@@ -26,15 +27,14 @@ export const VehicleCard = ({ vehicle }) => {
 
   return (
     <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition duration-300">
-      {/* Image */}
       <div className="relative h-60 overflow-hidden bg-gray-100">
-        <img
+        <Image
           src={vehicle.images[currentImageIndex]}
           alt={vehicle.title}
+          fill
           className="w-full h-full object-cover"
         />
 
-        {/* Badges */}
         <div className="absolute top-3 left-3 flex gap-2">
           <span className="bg-white/90 backdrop-blur text-gray-800 px-3 py-1 rounded-full text-xs font-medium shadow">
             {vehicle.seller}
@@ -44,7 +44,6 @@ export const VehicleCard = ({ vehicle }) => {
           </span>
         </div>
 
-        {/* Favourite */}
         <button
           onClick={() => setIsFavorite(!isFavorite)}
           className="absolute top-3 right-3 cursor-pointer bg-white/90 backdrop-blur p-2 rounded-full shadow hover:bg-white"
@@ -56,7 +55,6 @@ export const VehicleCard = ({ vehicle }) => {
           />
         </button>
 
-        {/* Indicators */}
         <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
           {vehicle.images.map((_, idx) => (
             <span
@@ -69,7 +67,6 @@ export const VehicleCard = ({ vehicle }) => {
         </div>
       </div>
 
-      {/* Content */}
       <div className="p-5">
         <h3 className="text-lg font-semibold text-gray-900 mb-1 line-clamp-1">
           {vehicle.title}
@@ -80,7 +77,6 @@ export const VehicleCard = ({ vehicle }) => {
           {vehicle.location}
         </div>
 
-        {/* Specs */}
         <div className="grid grid-cols-3 gap-4 text-sm mb-5">
           <div className="flex items-center text-gray-800 gap-2">
             <FaTachometerAlt className="text-gray-400" />
@@ -96,7 +92,6 @@ export const VehicleCard = ({ vehicle }) => {
           </div>
         </div>
 
-        {/* Pricing */}
         <div className="border-t flex flex-row justify-between border-gray-800 pt-4 mb-4">
           <div className="mt-2 text-sm text-gray-500 space-y-1">
             <p>
@@ -121,7 +116,6 @@ export const VehicleCard = ({ vehicle }) => {
           </div>
         </div>
 
-        {/* Actions */}
         <div className="flex gap-3">
           <button
             onClick={() => setIsModalOpen(true)}

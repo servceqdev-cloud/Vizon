@@ -73,7 +73,6 @@ export const VehicleFilters = ({ filters, setFilters, onReset }) => {
 
   return (
     <div className="mb-8">
-      {/* Header Section */}
       <div className="bg-gradient-to-r from-[#0A1628] to-[#1a2744] rounded-2xl p-8 mb-6 text-center">
         <p className="text-[#04A1FF] text-sm font-semibold mb-2 tracking-wide">
          Avalible Car for Finance
@@ -87,7 +86,6 @@ export const VehicleFilters = ({ filters, setFilters, onReset }) => {
         </p>
       </div>
 
-      {/* Filters Section */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-semibold text-gray-900">
           Filter by options

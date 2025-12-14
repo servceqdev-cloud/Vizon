@@ -47,7 +47,6 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200">
       <div className="bg-white rounded-2xl w-full max-w-5xl max-h-[95vh] overflow-y-auto my-8 shadow-2xl">
-        {/* Header */}
         <div className="sticky top-0 bg-white border-b border-gray-200 p-4 flex justify-between items-center z-10">
           <div>
             <h2 className="text-2xl font-bold text-gray-900">
@@ -66,7 +65,6 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
           </button>
         </div>
 
-        {/* Image Gallery */}
         <div className="p-6">
           <div className="relative bg-gray-900 rounded-xl overflow-hidden mb-4">
             <img
@@ -75,7 +73,6 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
               className="w-full h-96 object-cover"
             />
 
-            {/* Navigation Arrows */}
             {vehicle.images.length > 1 && (
               <>
                 <button
@@ -93,7 +90,6 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
               </>
             )}
 
-            {/* Favorite Button */}
             <button
               onClick={() => setIsFavorite(!isFavorite)}
               className="absolute top-4 right-4 cursor-pointer bg-white/90 backdrop-blur p-3 rounded-full shadow-lg hover:bg-white transition"
@@ -105,13 +101,11 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
               />
             </button>
 
-            {/* Image Counter */}
             <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur text-white px-3 py-1 rounded-full text-sm">
               {selectedImageIndex + 1} / {vehicle.images.length}
             </div>
           </div>
 
-          {/* Thumbnail Gallery */}
           <div className="flex gap-3 overflow-x-auto pb-2">
             {vehicle.images.map((img, idx) => (
               <button
@@ -133,12 +127,9 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
           </div>
         </div>
 
-        {/* Content Grid */}
         <div className="px-6 pb-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Left Column - Description & Specs */}
             <div className="lg:col-span-2 space-y-6">
-              {/* Description */}
               <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   Description
@@ -148,7 +139,6 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
                 </p>
               </div>
 
-              {/* Key Specifications */}
               <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   Key Specifications
@@ -236,7 +226,6 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Vehicle Information */}
               <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   Vehicle Information
@@ -270,9 +259,7 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
               </div>
             </div>
 
-            {/* Right Column - Pricing & Actions */}
             <div className="space-y-4">
-              {/* Price Card */}
               <div className="bg-[#04A1FF] rounded-xl p-6 text-white shadow-lg ">
                 <div className="mb-4">
                   <p className="text-white/80 text-sm mb-1">Total Price</p>
@@ -302,7 +289,6 @@ export const VehicleDetailModal = ({ vehicle, isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Additional Info */}
               <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
                 <h4 className="font-semibold text-gray-900 mb-3">Need Help?</h4>
                 <p className="text-sm text-gray-600 mb-3">

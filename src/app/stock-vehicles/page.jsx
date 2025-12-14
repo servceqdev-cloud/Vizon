@@ -1,6 +1,5 @@
 "use client";
-import React, { useState} from "react";
-
+import React, { useState } from "react";
 
 import { VehicleCard } from "../components/vehicals/VehicalCard";
 import { MOCK_VEHICLES } from "../data/mockVehicals";
@@ -66,8 +65,15 @@ const VehicleGallery = () => {
           <>
             <div className="mb-6">
               <p className="text-gray-600">
-                Showing <span className="font-semibold text-gray-900">{filteredVehicles.length}</span> of{" "}
-                <span className="font-semibold text-gray-900">{MOCK_VEHICLES.length}</span> vehicles
+                Showing{" "}
+                <span className="font-semibold text-gray-900">
+                  {filteredVehicles.length}
+                </span>{" "}
+                of{" "}
+                <span className="font-semibold text-gray-900">
+                  {MOCK_VEHICLES.length}
+                </span>{" "}
+                vehicles
               </p>
             </div>
 
@@ -84,4 +90,3 @@ const VehicleGallery = () => {
 };
 
 export default VehicleGallery;
-

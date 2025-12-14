@@ -8,7 +8,6 @@ import { VehicleFilters } from "../components/filters/VehicleFilters";
 const CarSearchContent = () => {
   const searchParams = useSearchParams();
   
-  // Get initial search parameters from URL
   const initialKeyword = searchParams.get("keyword") || "";
   const initialMake = searchParams.get("make") || "";
   const initialModel = searchParams.get("model") || "";
@@ -39,9 +38,8 @@ const CarSearchContent = () => {
     setKeyword("");
   };
 
-  // Filter vehicles based on search params and filters
+
   const filteredVehicles = MOCK_VEHICLES.filter((vehicle) => {
-    // Keyword search - searches in title, make, model, location
     if (keyword) {
       const searchTerm = keyword.toLowerCase();
       const matchesKeyword =
@@ -54,27 +52,20 @@ const CarSearchContent = () => {
       if (!matchesKeyword) return false;
     }
 
-    // Filter by make
     if (filters.make && vehicle.make !== filters.make) return false;
     
-    // Filter by model
     if (filters.model && vehicle.model !== filters.model) return false;
     
-    // Filter by body type
     if (filters.bodyType && vehicle.bodyType !== filters.bodyType) return false;
     
-    // Filter by transmission
     if (filters.transmission && vehicle.transmission !== filters.transmission)
       return false;
     
-    // Filter by fuel type
     if (filters.fuelType && vehicle.fuel !== filters.fuelType) return false;
     
-    // Filter by min price
     if (filters.minPrice && vehicle.price < parseFloat(filters.minPrice))
       return false;
     
-    // Filter by max price
     if (filters.maxPrice && vehicle.price > parseFloat(filters.maxPrice))
       return false;
 
@@ -84,7 +75,6 @@ const CarSearchContent = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Search Results Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Search Results
@@ -116,14 +106,12 @@ const CarSearchContent = () => {
           )}
         </div>
 
-        {/* Filters */}
         <VehicleFilters
           filters={filters}
           setFilters={setFilters}
           onReset={resetFilters}
         />
 
-        {/* Results */}
         {filteredVehicles.length === 0 ? (
           <div className="text-center py-20">
             <div className="mb-6">
@@ -171,7 +159,6 @@ const CarSearchContent = () => {
                 vehicles
               </p>
               
-              {/* Sort Dropdown (optional) */}
               <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm focus:border-[#04A1FF] focus:outline-none">
                 <option value="relevance">Sort by: Relevance</option>
                 <option value="price-low">Price: Low to High</option>

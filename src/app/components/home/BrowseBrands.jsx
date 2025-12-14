@@ -1,33 +1,6 @@
-"use client";
-
-import React, { useState } from "react";
-import {
-  FiSearch,
-  FiHeart,
-  FiMapPin,
-  FiChevronLeft,
-  FiChevronRight,
-  FiX,
-  FiMenu,
-  FiUser,
-  FiPhone,
-  FiMail,
-  FiClock,
-} from "react-icons/fi";
-import {
-  BsFuelPump,
-  BsSpeedometer2,
-  BsYoutube,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
-import { GiGearStickPattern } from "react-icons/gi";
-import { MdElectricCar, MdLocationOn } from "react-icons/md";
-
-import { FiFilter, FiChevronDown } from "react-icons/fi";
-import { BsFacebook, BsTiktok, BsPinterest } from "react-icons/bs";
-import { AiOutlineCar } from "react-icons/ai";
-import { BRANDS } from "../../data/mockVehicals";
+import React from "react";
+import Image from "next/image";
+import { BRANDS } from "../../data/BrandsData";
 
 export const BrowseBrands = () => {
   return (
@@ -43,11 +16,14 @@ export const BrowseBrands = () => {
               className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all cursor-pointer group border border-gray-100"
             >
               <div className="flex flex-col items-center gap-4">
-                {/* <div className="text-6xl group-hover:scale-110 transition-transform">
-                  {brand.logo}
-                </div> */}
+                <Image
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  width={120}
+                  height={120}
+                  className="object-contain"
+                />
 
-                <img src={brand.logo} alt="" />
                 <h3 className="font-bold text-xl text-gray-900 group-hover:text-[#04A1FF] transition-colors">
                   {brand.name}
                 </h3>
@@ -56,7 +32,7 @@ export const BrowseBrands = () => {
           ))}
         </div>
         <div className="text-center mt-10">
-          <button className="text-[#04A1FF] hover:text-blue-400 font-bold text-lg inline-flex items-center gap-2 border-2 border-[#04A1FF] px-4 py-2 cursor-pointer rounded-xl hover:bg-blue-50 transition-all">
+          <button className="text-[#04A1FF] hover:text-blue-400 font-semibold text-lg inline-flex items-center gap-2 border-2 border-[#04A1FF] px-4 py-2 cursor-pointer rounded-xl hover:bg-blue-50 transition-all">
             + Show all brands
           </button>
         </div>

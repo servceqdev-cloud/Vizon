@@ -1,4 +1,3 @@
-import { FiSearch, FiShield, FiCreditCard, FiDollarSign } from "react-icons/fi";
 export const MOCK_VEHICLES = [
   {
     id: 1,
@@ -150,74 +149,5 @@ export const MOCK_VEHICLES = [
       "https://images.unsplash.com/photo-1603575448362-6b54f3b0c7e4?w=800",
     ],
     financePerMonth: 1215,
-  },
-];
-
-// export const BRANDS = [
-//   { name: "Audi", logo: "🅰️" },
-//   { name: "BMW", logo: "🅱️" },
-//   { name: "Mercedes-Benz", logo: "🅼" },
-//   { name: "Volvo", logo: "🆅" },
-//   { name: "Ford", logo: "🅵" },
-//   { name: "Toyota", logo: "🆃" },
-//   { name: "Volkswagen", logo: "🆅" },
-//   { name: "Nissan", logo: "🅽" },
-// ];
-
-export const BRANDS = [
-  {
-    name: "Audi",
-    logo: "https://vl.imgix.net/img/audi-logo.png",
-  },
-  {
-    name: "BMW",
-    logo: "https://vl.imgix.net/img/bmw-logo.png",
-  },
-  {
-    name: "Mercedes",
-    logo: "https://vl.imgix.net/img/mercedes-benz-logo.png",
-  },
-  {
-    name: "Volvo",
-    logo: "https://vl.imgix.net/img/volvo-logo.png",
-  },
-  {
-    name: "Ford",
-    logo: "https://vl.imgix.net/img/ford-logo.png",
-  },
-  {
-    name: "Toyota",
-    logo: "https://vl.imgix.net/img/toyota-logo.png",
-  },
-  {
-    name: "Volkswagen",
-    logo: "https://vl.imgix.net/img/volkswagen-logo.png",
-  },
-  {
-    name: "Nissan",
-    logo: "https://vl.imgix.net/img/nissan-logo.png",
-  },
-];
-
-export const BUYING_ESSENTIALS = [
-  {
-    title: "Check a car's history",
-    desc: "Have complete peace of mind before you buy your next car.",
-    icon: <FiSearch className="w-full h-full" />,
-  },
-  {
-    title: "Security advice",
-    desc: "Advice on how to buy and sell vehicles safely.",
-    icon: <FiShield className="w-full h-full" />,
-  },
-  {
-    title: "Car finance & loans",
-    desc: "Discover how much you can borrow and find the right package for you.",
-    icon: <FiCreditCard className="w-full h-full" />,
-  },
-  {
-    title: "What's it worth",
-    desc: "Get a free valuation. Sell or part-exchange your car at the right price.",
-    icon: <FiDollarSign className="w-full h-full" />,
   },
 ];

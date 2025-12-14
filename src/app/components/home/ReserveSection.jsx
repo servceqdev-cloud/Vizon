@@ -1,32 +1,5 @@
-"use client";
-
-import React, { useState } from "react";
-import {
-  FiSearch,
-  FiHeart,
-  FiMapPin,
-  FiChevronLeft,
-  FiChevronRight,
-  FiX,
-  FiMenu,
-  FiUser,
-  FiPhone,
-  FiMail,
-  FiClock,
-} from "react-icons/fi";
-import {
-  BsFuelPump,
-  BsSpeedometer2,
-  BsYoutube,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
-import { GiGearStickPattern } from "react-icons/gi";
-import { MdElectricCar, MdLocationOn } from "react-icons/md";
-
-import { FiFilter, FiChevronDown } from "react-icons/fi";
-import { BsFacebook, BsTiktok, BsPinterest } from "react-icons/bs";
-import { AiOutlineCar } from "react-icons/ai";
+import React from "react";
+import { FiSearch } from "react-icons/fi";
 
 export const ReserveSection = () => {
   return (
@@ -41,9 +14,9 @@ export const ReserveSection = () => {
               <p className="text-lg md:text-xl text-blue-100 mb-3 md:mb-8">
                 Once you've found your car, build your deal to reserve online.
               </p>
-              <button className="bg-white text-[#04A1FF] px-4 md:px-10 py-2 md:py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg">
+              <button className="bg-white flex flex-row items-center justify-center gap-1 cursor-pointers text-[#04A1FF] px-4 md:px-10 py-2 md:py-4 rounded-xl text-lg hover:bg-blue-50 transition-all shadow-lg">
                 <FiSearch className="inline w-5 h-5 mr-2" />
-                Search 
+                <span>Search</span>
               </button>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
@@ -51,9 +24,7 @@ export const ReserveSection = () => {
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-black text-[#04A1FF]">
                   1
                 </div>
-                <h3 className="font-bold text-lg mb-2">
-                  Build your deal
-                </h3>
+                <h3 className="font-bold text-lg mb-2">Build your deal</h3>
                 <p className="text-sm text-blue-100">
                   Add part exchange, finance and more
                 </p>
