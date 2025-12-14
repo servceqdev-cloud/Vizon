@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MOCK_VEHICLES } from "./data/mockVehicals";
+import { MOCK_VEHICLES } from "../data/mockVehicals";
 import { HeroSearch } from "./components/home/SearchBar";
 import { LeaseCarousel } from "./components/home/LeaseCarousel";
 import { FilterSidebar } from "./components/filters/VehicleFilters";
@@ -55,7 +55,7 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <HeroSearch  />
+      <HeroSearch />
 
       <DiscoverSection />
       <LeaseCarousel />

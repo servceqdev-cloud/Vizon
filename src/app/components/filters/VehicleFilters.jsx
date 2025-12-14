@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import { MOCK_VEHICLES } from "@/app/data/mockVehicals";
+import { MOCK_VEHICLES } from "@/data/mockVehicals";
 
 export const VehicleFilters = ({ filters, setFilters, onReset }) => {
   const makes = [...new Set(MOCK_VEHICLES.map((v) => v.make))];
@@ -75,14 +75,13 @@ export const VehicleFilters = ({ filters, setFilters, onReset }) => {
     <div className="mb-8">
       <div className="bg-gradient-to-r from-[#0A1628] to-[#1a2744] rounded-2xl p-8 mb-6 text-center">
         <p className="text-[#04A1FF] text-sm font-semibold mb-2 tracking-wide">
-         Avalible Car for Finance
+          Avalible Car for Finance
         </p>
         <h1 className="text-4xl font-bold text-white mb-4">
-        Browse stock Vehicles
+          Browse stock Vehicles
         </h1>
         <p className="text-gray-300 max-w-3xl mx-auto">
-        Choose your next car from one of our stock dealerships
-         
+          Choose your next car from one of our stock dealerships
         </p>
       </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { sections } from "@/app/data/DiscoverSectionData";
+import { sections } from "@/data/DiscoverSectionData";
 import Image from "next/image";
 export const DiscoverSection = () => {
   return (

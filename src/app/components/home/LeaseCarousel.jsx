@@ -1,5 +1,5 @@
 import React from "react";
-import { MOCK_VEHICLES } from "@/app/data/mockVehicals";
+import { MOCK_VEHICLES } from "@/data/mockVehicals";
 import { VehicleCard } from "../vehicals/VehicalCard";
 import Link from "next/link";
 import { FiChevronRight } from "react-icons/fi";

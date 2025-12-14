@@ -32,19 +32,19 @@ export const Header = () => {
                 Home
               </Link>
               <Link
-                href="#"
+                href=" /car-finance"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Car Finance
               </Link>
               <Link
-                href="#"
+                href="/how-it-works"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 How it Works
               </Link>
               <Link
-                href="#"
+                href="/temporay-insurance"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Temporay Insurance
@@ -57,7 +57,7 @@ export const Header = () => {
               </Link>
 
               <Link
-                href="#"
+                href="/contact-us"
                 className="text-gray-800 cursor-pointer hover:text-[#04A1FF] font-medium"
               >
                 Contact Us
@@ -87,19 +87,19 @@ export const Header = () => {
             <Link href="/" className="block py-2 text-gray-800">
               Home
             </Link>
-            <Link href="#" className="block py-2 text-gray-800">
+            <Link href="/car-finance" className="block py-2 text-gray-800">
               Car Finance
             </Link>
-            <Link href="#" className="block py-2 text-gray-800">
+            <Link href="/how-it-works" className="block py-2 text-gray-800">
               How it Works
             </Link>
-            <Link href="#" className="block py-2 text-gray-800">
-              Car leasing
+            <Link href="/temporay-insurance" className="block py-2 text-gray-800">
+            Temporay Insurance
             </Link>
             <Link href="/stock-vehicles" className="block py-2 text-gray-800">
               Stock Vehicles
             </Link>
-            <Link href="#" className="block py-2 text-gray-800">
+            <Link href="/contact-us" className="block py-2 text-gray-800">
               Contact Us
             </Link>
             <button className="my-2 flex items-center cursor-pointer gap-2 text-white bg-[#04A1FF] font-semibold  px-4 py-2 rounded-lg">

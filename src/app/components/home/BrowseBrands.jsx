@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { BRANDS } from "../../data/BrandsData";
+import { BRANDS } from "../../../data/BrandsData";
 
 export const BrowseBrands = () => {
   return (

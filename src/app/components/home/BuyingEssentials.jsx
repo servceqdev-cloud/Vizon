@@ -1,6 +1,6 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
-import { BUYING_ESSENTIALS, colorClasses } from "@/app/data/Buying";
+import { BUYING_ESSENTIALS, colorClasses } from "@/data/Buying";
 
 export function BuyingEssentials() {
   return (

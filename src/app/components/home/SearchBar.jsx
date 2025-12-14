@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { FaChevronDown } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
-import { MOCK_VEHICLES } from "@/app/data/mockVehicals";
+import { MOCK_VEHICLES } from "@/data/mockVehicals";
 
 export const HeroSearch = () => {
   const router = useRouter();

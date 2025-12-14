@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { VehicleCard } from "../components/vehicals/VehicalCard";
-import { MOCK_VEHICLES } from "../data/mockVehicals";
+import { MOCK_VEHICLES } from "../../data/mockVehicals";
 import { VehicleFilters } from "../components/filters/VehicleFilters";
 
 const CarSearchContent = () => {
   const searchParams = useSearchParams();
-  
+
   const initialKeyword = searchParams.get("keyword") || "";
   const initialMake = searchParams.get("make") || "";
   const initialModel = searchParams.get("model") || "";
@@ -38,7 +38,6 @@ const CarSearchContent = () => {
     setKeyword("");
   };
 
-
   const filteredVehicles = MOCK_VEHICLES.filter((vehicle) => {
     if (keyword) {
       const searchTerm = keyword.toLowerCase();
@@ -48,24 +47,24 @@ const CarSearchContent = () => {
         vehicle.model.toLowerCase().includes(searchTerm) ||
         vehicle.location.toLowerCase().includes(searchTerm) ||
         vehicle.description.toLowerCase().includes(searchTerm);
-      
+
       if (!matchesKeyword) return false;
     }
 
     if (filters.make && vehicle.make !== filters.make) return false;
-    
+
     if (filters.model && vehicle.model !== filters.model) return false;
-    
+
     if (filters.bodyType && vehicle.bodyType !== filters.bodyType) return false;
-    
+
     if (filters.transmission && vehicle.transmission !== filters.transmission)
       return false;
-    
+
     if (filters.fuelType && vehicle.fuel !== filters.fuelType) return false;
-    
+
     if (filters.minPrice && vehicle.price < parseFloat(filters.minPrice))
       return false;
-    
+
     if (filters.maxPrice && vehicle.price > parseFloat(filters.maxPrice))
       return false;
 
@@ -158,7 +157,7 @@ const CarSearchContent = () => {
                 </span>{" "}
                 vehicles
               </p>
-              
+
               <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm focus:border-[#04A1FF] focus:outline-none">
                 <option value="relevance">Sort by: Relevance</option>
                 <option value="price-low">Price: Low to High</option>

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import { VehicleCard } from "../components/vehicals/VehicalCard";
-import { MOCK_VEHICLES } from "../data/mockVehicals";
+import { MOCK_VEHICLES } from "../../data/mockVehicals";
 import { VehicleFilters } from "../components/filters/VehicleFilters";
 
 const VehicleGallery = () => {
